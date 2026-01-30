@@ -659,7 +659,7 @@ change_mac() {
 
 # Define VPN credentials
 username="vpnbook"
-password="kyvn8g3"
+password="pvgz9pq"
 
 # Define path to vpn.creds file (change this as per your actual location)
 creds_path="$(pwd)/vpn.creds"  # Using the current script's directory
