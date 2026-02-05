@@ -678,15 +678,16 @@ create_germany_vpn_file() {
 client
 dev tun1
 proto tcp
-remote 51.75.145.220 443
+remote 51.75.145.20 443
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
 auth-user-pass $creds_path
-comp-lzo
 verb 3
-cipher AES-256-CBC
+cipher AES-256-GCM
+auth SHA256
+data-ciphers AES-256-GCM:AES-128-GCM
 fast-io
 pull
 route-delay 2
@@ -776,15 +777,16 @@ create_caneda_vpn_file() {
 client
 dev tun1
 proto tcp
-remote 142.4.216.196 443
+remote 144.217.253.149 443
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
 auth-user-pass $creds_path
-comp-lzo
 verb 3
-cipher AES-256-CBC
+cipher AES-256-GCM
+auth SHA256
+data-ciphers AES-256-GCM:AES-128-GCM
 fast-io
 pull
 route-delay 2
