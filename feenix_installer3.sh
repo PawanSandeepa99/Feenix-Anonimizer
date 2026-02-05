@@ -1034,7 +1034,8 @@ proxychains_enable() {
 		    ROUTE_IPS=$(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' "$PROXY_LOG" | tr '\n' ' ')
 
 		    if [[ -n "$ROUTE_IPS" ]]; then
-			PROXYCHAINS_PATH="$ROUTE_IPS"
+			#PROXYCHAINS_PATH="$ROUTE_IPS"
+			PROXYCHAINS_PATH="routing via proxy chains"
 		    else
 			PROXYCHAINS_PATH="Routing path not detected yet"
 		    fi
