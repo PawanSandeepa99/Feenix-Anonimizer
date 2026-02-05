@@ -777,7 +777,7 @@ create_caneda_vpn_file() {
 client
 dev tun1
 proto tcp
-remote 142.4.216.196 443
+remote 144.217.253.149 443
 resolv-retry infinite
 nobind
 persist-key
