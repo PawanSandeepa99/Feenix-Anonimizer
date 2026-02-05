@@ -16,7 +16,7 @@ CYAN="\e[36m"
 BOLD="\e[1m"
 RESET="\e[0m"
 
-TARGET_DIR="/Feenix-Anonimizer"
+TARGET_DIR="/Feenix_Anonimizer"
 BACKUP_DIR="$TARGET_DIR/proxychain_backup"
 SCRIPT_NAME="feenix_V4.3.sh"
 SCRIPT_PATH="$TARGET_DIR/$SCRIPT_NAME"
@@ -1034,8 +1034,7 @@ proxychains_enable() {
 		    ROUTE_IPS=$(grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' "$PROXY_LOG" | tr '\n' ' ')
 
 		    if [[ -n "$ROUTE_IPS" ]]; then
-			#PROXYCHAINS_PATH="$ROUTE_IPS"
-			PROXYCHAINS_PATH="routing via proxy chains"
+			PROXYCHAINS_PATH="$ROUTE_IPS"
 		    else
 			PROXYCHAINS_PATH="Routing path not detected yet"
 		    fi
