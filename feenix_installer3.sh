@@ -16,7 +16,7 @@ CYAN="\e[36m"
 BOLD="\e[1m"
 RESET="\e[0m"
 
-TARGET_DIR="~/Feenix_Anonimizer_v4.3"
+TARGET_DIR="/home/Feenix_Anonimizer_v4.3"
 BACKUP_DIR="$TARGET_DIR/proxychain_backup"
 SCRIPT_NAME="feenix_V4.3.sh"
 SCRIPT_PATH="$TARGET_DIR/$SCRIPT_NAME"
